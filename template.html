@@ -5,66 +5,61 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <style>
-        .pwrq-email-signature ul,
-        p {
-            margin: 0;
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+        @media (prefers-color-scheme: dark) {
+            .pwrq-email-signature {
+                background-color: #3b4758 !important;
+            }
+
+            .pwrq-email-signature p,
+            .pwrq-email-signature a {
+                color: #fff !important;
+            }
+
+            .pwrq-email-signature strong {
+                color: #4bbd95 !important;
+            }
+
+            .pwrq-social img {
+                filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+            }
         }
 
-        .pwrq-email-signature a {
-            color: unset !important;
-            cursor: pointer;
-            text-decoration: none;
-            transition: color 200ms ease-in;
-        }
+        @media (max-width: 600px) {
+            .pwrq-email-signature td {
+                display: block;
+                width: 100%;
+                margin-bottom: 25px;
+            }
 
-        .pwrq-email-signature a:hover {
-            color: #ff2169 !important;
-        }
+            .employee-name, .employee-title {
+                text-align: center;
+            }
 
-        .pwrq-email-signature a:active {
-            color: unset !important;
-        }
-
-        .pwrq-email-signature a:visited {
-            color: unset !important;
-        }
-
-        .pwrq-email-signature td {
-            padding: 0;
+            .pwrq-social {
+                position: relative !important;
+                margin-top: 10px !important;
+            }
         }
     </style>
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color: darkgray; display: flex; justify-content: center; align-items: center;">
-<div class="pwrq-email-signature" style="font-family: 'Roboto', sans-serif; color: #09192e; background-color: #fff; padding: 20px; width: 710px; max-width: 710px; border: 1px solid lightgray; overflow: hidden; position: relative; font-size: 18px; font-weight: 300;">
-    <img src="https://al-uqab.s3.eu-central-1.amazonaws.com/pwrq-logo-q.png" style="position: absolute; top: 50%; right: 33%; height: 140%; opacity: 0.05; transform: translate(50%, -50%);" />
-    <table style="width: 100%; border: none; border-spacing: 0;">
+<body style="font-family: 'Roboto', sans-serif; max-width: 710px; font-size: 17px; font-weight: 400; margin: 0; padding: 0">
+<div class="pwrq-email-signature" style="background-color: #fff; padding: 20px; overflow: hidden; position: relative;">
+    <table cellpadding="0" cellspacing="0" border="0" style="color: #09192e; width: 100%; border: none; border-spacing: 0;">
         <tr>
             <td style="text-align: center; vertical-align: middle; padding-right: 15px;">
-                <img alt="Profile Picture" src="https://media-hbe1-2.cdn.whatsapp.net/v/t61.24694-24/205474886_2367773343356684_1008342907584607341_n.jpg?ccb=11-4&oh=01_Q5AaINon4ZCDct_IuLBTcx4nc9oyVO4BJFg4bTC7310XgiQG&oe=66A620EC&_nc_sid=e6ed6c&_nc_cat=110" style="width: 150px; border-radius: 50%;">
+                <img alt="Profile Picture" src="https://media-hbe1-2.cdn.whatsapp.net/v/t61.24694-24/205474886_2367773343356684_1008342907584607341_n.jpg?ccb=11-4&oh=01_Q5AaINon4ZCDct_IuLBTcx4nc9oyVO4BJFg4bTC7310XgiQG&oe=66A620EC&_nc_sid=e6ed6c&_nc_cat=110" style="max-width: 150px; border-radius: 50%;">
             </td>
             <td style="vertical-align: top;">
-                <p style="font-size: 24px; font-weight: 300; color: #4bbd95; margin: 0 0 5px 0;">
-                    <strong>Abdul Idris</strong>
-                </p>
-                <p style="margin: 0 0 15px 0;">SVP Product Dev. & Marketing</p>
-                <p style="margin: 5px 0;">
-                    <span style="color: #4bbd95;">p</span>: +1 234 567 8901
-                </p>
-                <p style="margin: 5px 0;">
-                    <span style="color: #4bbd95;">p</span>: +1 234 567 8901
-                </p>
-                <p style="margin: 5px 0;">
-                    <span style="color: #4bbd95;">w</span>: <a href="https://www.pwrq.com" style="color: #09192e; text-decoration: none;">www.pwrq.com</a>
-                </p>
-                <p style="margin: 5px 0;">
-                    <span style="color: #4bbd95;">a</span>: Standard Dr, Hanover, MD 21076 7235
-                </p>
+                <p class="employee-name" style="font-size: 24px; font-weight: 400; color: #4bbd95; margin: 0 0 5px 0;"><strong>Abdul Idris</strong></p>
+                <p class="employee-title" style="margin: 0 0 15px 0;">SVP Product Dev. & Marketing</p>
+                <p style="margin: 5px 0;"><span style="color: #4bbd95;">p</span>: +1 234 567 8901</p>
+                <p style="margin: 5px 0;"><span style="color: #4bbd95;">p</span>: +1 234 567 8901</p>
+                <p style="margin: 5px 0;"><span style="color: #4bbd95;">w</span>: <a href="https://www.pwrq.com" style="color: #09192e; text-decoration: none;">www.pwrq.com</a></p>
+                <p style="margin: 5px 0;"><span style="color: #4bbd95;">a</span>: Standard Dr, Hanover, MD 21076 7235</p>
             </td>
-            <td style="vertical-align: top; text-align: left; position: relative;">
+            <td style="vertical-align: top; text-align: left; position: relative; white-space: nowrap">
                 <div>
                     <img alt="pwrq logo" src="https://al-uqab.s3.eu-central-1.amazonaws.com/pwrq-dark-logo.png" style="height: 17px; margin-right: 5px; width: auto;">
                     <span style="position: relative; display: inline-block;"><!--
@@ -72,18 +67,18 @@
                             --><span style="background-color: #09192e; width: 5px; height: 17px; display: inline-block; transform: skew(-20deg); margin-right: 4px;"></span><!--
                             --><span style="background-color: #09192e; width: 5px; height: 17px; display: inline-block; transform: skew(-20deg); margin-right: 4px;"></span><!--
                             --><span style="background-color: #09192e; width: 5px; height: 17px; display: inline-block; transform: skew(-20deg); margin-right: 4px;"></span><!--
-                            --><span style="background-color: #4bbd95; width: 210%; height: 17px; display: inline-block; transform: skew(-20deg); position: absolute;"></span>
-                        </span>
+                            --><span style="background-color: #4bbd95; width: 1500%; height: 17px; display: inline-block; transform: skew(-20deg); position: absolute;"></span>
+                    </span>
                 </div>
-                <p style="margin: 0; position: absolute; bottom: 0; text-align: right; width: 100%;">
-                    <a href="https://www.youtube.com" style="margin-right: 5px;" aria-label="YouTube">
-                        <img alt="YouTube" src="https://al-uqab.s3.eu-central-1.amazonaws.com/youtube-logo.svg" />
+                <p class="pwrq-social" style="margin: 0; position: absolute; bottom: 0; text-align: right; width: 100%;">
+                    <a href="https://www.youtube.com" style="display: inline-block; margin-right: 5px; text-decoration: none; height: 24px;" aria-label="YouTube">
+                        <img alt="YouTube" src="https://al-uqab.s3.eu-central-1.amazonaws.com/youtube-logo.svg" style="height: 24px; vertical-align: middle;">
                     </a>
-                    <a href="https://www.x.com" style="margin-right: 5px;" aria-label="X">
-                        <img alt="Twitter" src="https://al-uqab.s3.eu-central-1.amazonaws.com/x-logo.svg" />
+                    <a href="https://www.x.com" style="display: inline-block; margin-right: 5px; text-decoration: none; vertical-align: middle; height: 24px;" aria-label="X">
+                        <img alt="Twitter" src="https://al-uqab.s3.eu-central-1.amazonaws.com/x-logo.svg" style="height: 24px;">
                     </a>
-                    <a href="https://www.linkedin.com" aria-label="LinkedIn">
-                        <img alt="LinkedIn" src="https://al-uqab.s3.eu-central-1.amazonaws.com/linkedin-logo.svg" />
+                    <a href="https://www.linkedin.com" style="display: inline-block; text-decoration: none; vertical-align: middle; height: 24px;" aria-label="LinkedIn">
+                        <img alt="LinkedIn" src="https://al-uqab.s3.eu-central-1.amazonaws.com/linkedin-logo.svg" style="height: 24px;">
                     </a>
                 </p>
             </td>
