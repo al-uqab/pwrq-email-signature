@@ -21,8 +21,24 @@
                 color: #4bbd95 !important;
             }
 
-            .pwrq-social img {
+            .pwrq-dark {
+                display: table-cell;
+            }
+
+            .pwrq-light {
+                display: none;
                 filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .pwrq-dark {
+                display: none;
+                filter: invert(1) brightness(0);
+            }
+
+            .pwrq-light {
+                display: table-cell;
             }
         }
     </style>
@@ -40,16 +56,23 @@
                         SVP Product Dev. & Marketing
                     </span>
         </td>
-        <td width="120" style="text-align: right;" valign="top">
+
+        <td width="120" style="text-align: right;" valign="top" class="pwrq-dark">
             <a href="https://www.pwrq.com" target="_blank">
-                <img src="https://al-uqab.s3.eu-central-1.amazonaws.com/pwrq-logo-w-lines.png" height="17" alt="pwrq logo">
+                <img src="https://github.com/al-uqab/pwrq-email-signature/blob/main/assets/pwrq-logo-w-lines.png?raw=true" height="17" alt="pwrq logo">
             </a>
         </td>
+        <td width="120" style="text-align: right;" valign="top" class="pwrq-light">
+            <a href="https://www.pwrq.com" target="_blank">
+                <img src="https://github.com/al-uqab/pwrq-email-signature/blob/main/assets/pwrq-logo-w-lines-light.png?raw=true" height="17" alt="pwrq logo">
+            </a>
+        </td>
+
     </tr>
     <tr>
         <td width="10"></td>
-        <td width="260" cellpadding="0" cellspacing="0">
-                    <span style="vertical-align: middle; color: #09192e; font-size: 9pt; font-family: 'Roboto', sans-serif; line-height: 16px; white-space: nowrap">
+        <td width="280" cellpadding="0" cellspacing="0">
+                    <span style="vertical-align: middle; color: #09192e; font-size: 9pt; font-family: 'Roboto', sans-serif; line-height: 16px; ">
                         <span style="font-weight: 600; color: #4bbd95 !important;">p:&nbsp;</span> +1 443 642 9080
                     </span><br>
             <span style="vertical-align: middle; color: #09192e; font-size: 9pt; font-family: 'Roboto', sans-serif; line-height: 16px;">
@@ -59,11 +82,12 @@
                         <span style="font-weight: 600; color: #4bbd95 !important;">w:</span> &nbsp;
                         <a href="https://www.pwrq.com" style="color: #09192e; text-decoration: none;">www.pwrq.com</a>
                     </span><br>
-            <span style="vertical-align: middle; color: #09192e; font-size: 9pt; font-family: 'Roboto', sans-serif; line-height: 16px; white-space: nowrap">
+            <span style="vertical-align: middle; color: #09192e; font-size: 9pt; font-family: 'Roboto', sans-serif; line-height: 16px;">
                         <span style="font-weight: 600; color: #4bbd95 !important;">a:&nbsp;</span> 7235 Standard Dr, Hanover, MD 21076
                     </span>
         </td>
-        <td width="120" cellpadding="0" cellspacing="0" valign="bottom" style="text-align: right;" class="pwrq-social">
+
+        <td width="100" cellpadding="0" cellspacing="0" valign="bottom" style="text-align: right;" class="pwrq-dark">
             <a href="https://www.youtube.com" style="display: inline-block; margin-right: 5px; text-decoration: none; height: 18px;">
                 <img alt="YouTube" src="https://github.com/al-uqab/pwrq-email-signature/blob/main/assets/youtube-logo.png?raw=true" style="height: 18px; vertical-align: middle;">
             </a>
@@ -74,6 +98,18 @@
                 <img alt="LinkedIn" src="https://github.com/al-uqab/pwrq-email-signature/blob/main/assets/linkedin-logo.png?raw=true" style="height: 18px;">
             </a>
         </td>
+        <td width="120" cellpadding="0" cellspacing="0" valign="bottom" style="text-align: right;" class="pwrq-light">
+            <a href="https://www.youtube.com" style="display: inline-block; margin-right: 5px; text-decoration: none; height: 18px;">
+                <img alt="YouTube" src="https://github.com/al-uqab/pwrq-email-signature/blob/main/assets/youtube-logo-light.png?raw=true" style="height: 18px; vertical-align: middle;">
+            </a>
+            <a href="https://www.x.com" style="display: inline-block; margin-right: 5px; text-decoration: none; vertical-align: middle; height: 18px;">
+                <img alt="X" src="https://github.com/al-uqab/pwrq-email-signature/blob/main/assets/x-logo-light.png?raw=true" style="height: 18px;">
+            </a>
+            <a href="https://www.linkedin.com" style="display: inline-block; text-decoration: none; vertical-align: middle; height: 18px;">
+                <img alt="LinkedIn" src="https://github.com/al-uqab/pwrq-email-signature/blob/main/assets/linkedin-logo-light.png?raw=true" style="height: 18px;">
+            </a>
+        </td>
+
     </tr>
     </tbody>
 </table>
