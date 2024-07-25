@@ -31,6 +31,21 @@
             }
         }
 
+        /* Outlook specific Dark Mode styles */
+        [data-ogsc] table {
+            background-color: #3b4758 !important;
+        }
+        [data-ogsc] table span,
+        [data-ogsc] table a {
+            color: #fff !important;
+        }
+        [data-ogsc] table strong {
+            color: #4bbd95 !important;
+        }
+        [data-ogsc] .pwrq-dark img {
+            filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+        }
+
         @media (prefers-color-scheme: light) {
             .pwrq-dark {
                 display: none;
